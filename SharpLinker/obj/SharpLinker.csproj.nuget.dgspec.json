@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/sashagolovach/Documents/SharpLinker/SharpLinker/SharpLinker.csproj": {}
+  },
+  "projects": {
+    "/Users/sashagolovach/Documents/SharpLinker/SharpLinker/SharpLinker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sashagolovach/Documents/SharpLinker/SharpLinker/SharpLinker.csproj",
+        "projectName": "SharpLinker",
+        "projectPath": "/Users/sashagolovach/Documents/SharpLinker/SharpLinker/SharpLinker.csproj",
+        "packagesPath": "/Users/sashagolovach/.nuget/packages/",
+        "outputPath": "/Users/sashagolovach/Documents/SharpLinker/SharpLinker/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/sashagolovach/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Blazor": {
+              "target": "Package",
+              "version": "[3.0.0-preview8.19405.7, )"
+            },
+            "Microsoft.AspNetCore.Blazor.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-preview8.19405.7, )"
+            },
+            "Microsoft.AspNetCore.Blazor.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-preview8.19405.7, )"
+            },
+            "Microsoft.AspNetCore.Blazor.HttpClient": {
+              "target": "Package",
+              "version": "[3.0.0-preview8.19405.7, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100-preview8-013656/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
