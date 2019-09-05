@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sashagolovach/Documents/SharpLinker/SharpLinker/SharpLinker.csproj": {}
+    "C:\\Projects\\SharpLinker\\SharpLinker\\SharpLinker.csproj": {}
   },
   "projects": {
-    "/Users/sashagolovach/Documents/SharpLinker/SharpLinker/SharpLinker.csproj": {
+    "C:\\Projects\\SharpLinker\\SharpLinker\\SharpLinker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sashagolovach/Documents/SharpLinker/SharpLinker/SharpLinker.csproj",
+        "projectUniqueName": "C:\\Projects\\SharpLinker\\SharpLinker\\SharpLinker.csproj",
         "projectName": "SharpLinker",
-        "projectPath": "/Users/sashagolovach/Documents/SharpLinker/SharpLinker/SharpLinker.csproj",
-        "packagesPath": "/Users/sashagolovach/.nuget/packages/",
-        "outputPath": "/Users/sashagolovach/Documents/SharpLinker/SharpLinker/obj/",
+        "projectPath": "C:\\Projects\\SharpLinker\\SharpLinker\\SharpLinker.csproj",
+        "packagesPath": "C:\\Users\\oleksandr.holovach\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\SharpLinker\\SharpLinker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/sashagolovach/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\oleksandr.holovach\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +76,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100-preview8-013656/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-preview8-013656\\RuntimeIdentifierGraph.json"
         }
       }
     }
