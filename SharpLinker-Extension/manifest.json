@@ -3,11 +3,9 @@
     "version": "0.1",
     "description": "Navigate c# code files easily",
     "manifest_version": 2,
-    "icons": [
-        {
+    "icons": {
             "128": "assets/images/icon.png"
-        }
-    ],
+        },
     "content_scripts": [
         {
             "matches": [
@@ -15,7 +13,7 @@
             ],
             "all_frames": true,
             "js": [
-                "assets/js/contentScript.js"
+                "assets/ts/src.js"
             ]
         }
     ],
@@ -25,7 +23,5 @@
         ],
         "persistent": false
     },
-    "permissions": [
-        "https://some-random-api.ml/*"
-    ]
+    "permissions": ["https://localhost:44340/"]
 }

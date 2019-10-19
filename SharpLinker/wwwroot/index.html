@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SharpLinker</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <app>Loading...</app>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+</body>
+<script>
+    //alert('Blazor started');
+    window.addEventListener("message", receiveMessage, false);
+
+    function receiveMessage(event) {
+        //console.log("blazor js recieve msg");
+        var data = event.data;
+        DotNet.invokeMethodAsync('SharpLinker', 'GetWelcomeText')
+        .then(data => {
+            postMessage(event.source, data);
+        });
+    }
+
+    function sendMessage(data){
+        postMessage(window.parent, data);
+    }
+
+    function postMessage(source, data){
+        source.postMessage(data, "*");
+    }
+</script>
+</script>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>OAuth Confirmation | GitKraken Account</title><style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      text-align: center;
+      background-color: #EBEEF2;
+      color: #d0d0d2;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 106.25%
+    }
+
+    #sharplinker-logo {
+      background-image: url("icon.svg");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: block;
+      height: 100px;
+      width: 180px;
+      margin: 10px;
+    }
+
+    .title {
+      color: #20968b;
+      font-family: 'ITCAvantGardeStdBk', sans-serif;
+    }
+
+    .button {
+      border-style: solid;
+      border-radius: 2px;
+      color: rgba(255, 255, 255, 0.75);
+      cursor: pointer;
+      display: block;
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-size: 20px;
+      margin: 40px auto 0;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-appearance: none;
+    }
+
+    .success {
+      background-color: rgba(92, 184, 92, 0.2);
+      border-color: rgb(92, 184, 92);
+    }
+
+    .success:hover {
+      background-color: rgba(92, 184, 92, 0.6);
+      border-color: rgba(92, 184, 92, 0.2);
+      color: white;
+      text-decoration: none;
+    }
+
+    .danger {
+      background-color: rgba(217, 65, 61, 0.2);
+      border-color: rgb(217, 65, 61);
+    }
+
+    .danger:hover {
+      background-color: rgba(217, 65, 61, 0.6);
+      border-color: rgba(217, 65, 61, 0.2);
+      color: white;
+      text-decoration: none;
+    }
+
+    .button.success {
+      padding: 10px 20px;
+    }
+
+    .button.danger {
+      font-size: 1rem;
+      padding: 5px 10px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 50px);
+    }
+
+    .message {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 20px;
+    }
+  </style>
+  </head>
+  <body>
+      <span id='sharplinker-logo'></span>
+      <div class='content'>
+          <div class='message'>
+              <h1 class='title'>Authorizing GitKraken to access GitHub.</h1>
+              <p>If you initiated this authorization from GitKraken, click continue to authorize access to GitHub.</p>
+              <input class='button success' type='button' value='Continue authorization' onclick="window.location.href='https://github.com/login/oauth/authorize?state=socketId%3A97709994-f811-4f11-bce4-d860239b7742%3Baction%3Aauthorize%3BinApp%3Atrue%3BneedsGKPermissions%3Atrue%3Bchallenge%3A5e073926-8765-442f-a322-ef70e60c8a88%3B&scope=admin%3Apublic_key%2Crepo&response_type=code&client_id=a7557949433b7d282a76'" />
+              <input class='button danger' type='button' value='Do not authorize' onclick="window.location.href='https://api.sharplinker.com/oauth/github/cancel?socket_id=97709994-f811-4f11-bce4-d860239b7742'" />
+    </div>
+  </div>
+</body>
+
+</html>
