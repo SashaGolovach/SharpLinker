@@ -1,6 +1,8 @@
 /// <reference path="services/comunicationResolver.ts" />
 /// <reference path="services/comunicationService.ts" />
 
+// Compile with tsc startup.ts --outDir out --out src.js --module "system"
+
 let comunicationService : ComunicationService;
 let iframeSource = 'https://localhost:44340/';
 var resolver;

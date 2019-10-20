@@ -1,6 +1,6 @@
 
 class ComunicationResolver{
-    eventFunctions : any = {};
+    eventFunctions : ActionsMap = {};
 
     resolve(event : any){
         if(this.eventFunctions[event.action] == undefined){
@@ -18,3 +18,7 @@ class ComunicationResolver{
         this.eventFunctions[action] = null;
     }
 } 
+
+interface ActionsMap {
+    [name: string]: Function;
+}
