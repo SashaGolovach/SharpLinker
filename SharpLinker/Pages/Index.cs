@@ -35,7 +35,7 @@ namespace SharpLinker.Pages
         [JSInvokable]
         public static object OnMessage(Message data)
         {
-            _comunicationResolver.Resolve(data);
+            comunicationResolver.Resolve(data);
             var response = new Message
             {
                 Action = PageActions.GetWelcomeTextResponse,

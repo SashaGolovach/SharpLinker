@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29209.152
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpLinker", "SharpLinker\SharpLinker.csproj", "{160A6675-7939-4BDC-8A09-CDE16DA7312F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunicationServer", "CommunicationServer\CommunicationServer.csproj", "{BB59C4AE-08DB-4DB0-BEBF-EECDF4960093}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthentificationServer", "AuthentificationServer\AuthentificationServer.csproj", "{1490EC35-6AC4-4882-BAE4-DB61A897B428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpLinkerService", "SharpLinkerService\SharpLinkerService.csproj", "{5B39512F-4854-464A-AE98-BE4DDB5DDC34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpLinker.CodeAnalysis", "SharpLinker.CodeAnalysis\SharpLinker.CodeAnalysis.csproj", "{23BC7CFC-C1F4-44E7-8353-CE020C915641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{8BA80C32-9B37-475D-A9AB-C85E7465AF2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpLinker.Infrastructure", "SharpLinker.Infrastructure\SharpLinker.Infrastructure.csproj", "{4D12EE2A-DE55-4CD3-9831-059C56662BE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{160A6675-7939-4BDC-8A09-CDE16DA7312F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{160A6675-7939-4BDC-8A09-CDE16DA7312F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{160A6675-7939-4BDC-8A09-CDE16DA7312F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{160A6675-7939-4BDC-8A09-CDE16DA7312F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BB59C4AE-08DB-4DB0-BEBF-EECDF4960093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB59C4AE-08DB-4DB0-BEBF-EECDF4960093}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB59C4AE-08DB-4DB0-BEBF-EECDF4960093}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +29,22 @@ Global
 		{1490EC35-6AC4-4882-BAE4-DB61A897B428}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1490EC35-6AC4-4882-BAE4-DB61A897B428}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1490EC35-6AC4-4882-BAE4-DB61A897B428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B39512F-4854-464A-AE98-BE4DDB5DDC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B39512F-4854-464A-AE98-BE4DDB5DDC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B39512F-4854-464A-AE98-BE4DDB5DDC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B39512F-4854-464A-AE98-BE4DDB5DDC34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23BC7CFC-C1F4-44E7-8353-CE020C915641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23BC7CFC-C1F4-44E7-8353-CE020C915641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23BC7CFC-C1F4-44E7-8353-CE020C915641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23BC7CFC-C1F4-44E7-8353-CE020C915641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA80C32-9B37-475D-A9AB-C85E7465AF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA80C32-9B37-475D-A9AB-C85E7465AF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA80C32-9B37-475D-A9AB-C85E7465AF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA80C32-9B37-475D-A9AB-C85E7465AF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D12EE2A-DE55-4CD3-9831-059C56662BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D12EE2A-DE55-4CD3-9831-059C56662BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D12EE2A-DE55-4CD3-9831-059C56662BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D12EE2A-DE55-4CD3-9831-059C56662BE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
