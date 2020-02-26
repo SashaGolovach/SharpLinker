@@ -22,5 +22,13 @@ namespace SharpLinkerService
                 Message = "Hello " + request.Name
             });
         }
+
+        public override async Task SayDoubleHello(HelloRequest request, IServerStreamWriter<HelloReply> responseStream, ServerCallContext context)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                await responseStream.WriteAsync(new HelloReply {Message = $"Hello {request.Name} {i}"});
+            }
+        }
     }
 }

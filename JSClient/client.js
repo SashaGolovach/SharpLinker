@@ -11,9 +11,17 @@ const client = new protoDescriptor.greet.Greeter(
   grpc.credentials.createInsecure()
 );
 
+debugger;
+
 client.SayHello({ name: `Sasha` }, (error, response) => {
   if (error) {
     console.error(error);
   }
   console.log("response ", response);
+});
+
+const call = client.SayDoubleHello({ name: "Mark" });
+
+call.on("data", function(data) {
+  console.log(data);
 });
